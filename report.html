@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report - Waste Management in Sagarpur</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="profile-background">
+    <header>
+        <h1>Waste Management Project</h1>
+        <nav>
+            <ul>
+                <li><a href="profile.html">Home</a></li>
+                <li><a href="report.html">Report</a></li>
+                <li><a href="update.html">Update</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="data.html">Data</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="report">
+            <h2>Report Waste Dumping</h2>
+            <form id="reportForm">
+                <label for="description">Description<span class="required">*</span>:</label>
+                <textarea id="description" name="description" required></textarea>
+                <label for="wasteType">Waste Type<span class="required">*</span>:</label>
+                <select id="wasteType" name="wasteType" required>
+                    <option value="household">Household</option>
+                    <option value="construction">Construction</option>
+                    <option value="industrial">Industrial</option>
+                    <option value="organic">Organic</option>
+                    <option value="recyclable">Recyclable</option>
+                    <option value="hazardous">Hazardous</option>
+                </select>
+                <label for="location">Location (Map Link)<span class="required">*</span>:</label>
+                <input type="text" id="location" name="location" required>
+                <label for="anonymous">Report Anonymously:</label>
+                <input type="checkbox" id="anonymous" name="anonymous" class="inline-checkbox">
+                <label for="photo">Photo:</label>
+                <input type="file" id="photo" name="photo">
+                <button type="submit">Report</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
